@@ -1,5 +1,5 @@
 const IgnoredPage = () => {
-    return <div>Ignored Page</div>
+    return <h2>Ignored Page</h2>
 }
 
 export default IgnoredPage;

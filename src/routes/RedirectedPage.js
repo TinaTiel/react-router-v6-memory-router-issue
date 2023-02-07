@@ -1,5 +1,5 @@
 const RedirectedPage = () => {
-    return <div>Redirected Page</div>
+    return <h2>Redirected Page</h2>
 }
 
 export default RedirectedPage;
