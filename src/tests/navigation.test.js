@@ -10,7 +10,6 @@ test('when rendered, the redirect page is shown instead of the ignored page', as
 
     // We expect the root to always be rendered
     const rootHeading = await screen.findByRole('heading', {name: 'Root Page'});
-    // THE TEST FAILS HERE UNEXPECTEDLY, BUT WORKS FINE IN THE WILD. IT'S RENDERING THE EMPTY ROOT DIV.
     expect(rootHeading).toBeInTheDocument(); 
 
     // We expect the redirect page to be rendered at the outlet
