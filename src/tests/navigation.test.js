@@ -13,7 +13,7 @@ test('when rendered, the redirect page is shown instead of the ignored page', as
     expect(rootHeading).toBeInTheDocument(); 
 
     // We expect the redirect page to be rendered at the outlet
-    const redirectedPage = screen.getByRole('heading', {name: 'Redirected Page'});
+    const redirectedPage = await screen.findByRole('heading', {name: 'Redirected Page'});
     expect(redirectedPage).toBeInTheDocument();
 
     // We don't expect the ignored page to be rendered at the outlet
